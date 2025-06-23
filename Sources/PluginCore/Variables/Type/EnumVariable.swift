@@ -88,7 +88,7 @@ package struct EnumVariable: TypeVariable, DeclaredVariable {
                 if !args.isEmpty {
                     FunctionCallExprSyntax(callee: callee) { args }
                 } else {
-                    FunctionCallExprSyntax(calledExpression: callee) {}
+                    FunctionCallExprSyntax(calledExpression: callee, arguments: args)
                 }
             return ExprSyntax(fExpr)
         }
